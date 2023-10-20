@@ -94,13 +94,13 @@ li a:hover {       /*changes the link color when you hover over it*/
 .column1 {     /*src: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive*/
     float: left;
     width: 25%;
-    padding: 2px;
+    padding: 15px;
 }
 
 .column2 {     /*src: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive*/
     float: left;
     width: 75%;
-    padding: 2px;
+    padding: 15px;
 }
 
 .row::after {      /*clear floats after the columns using the row class*/
