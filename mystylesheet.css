@@ -51,13 +51,13 @@ body {         /*selector for body elements*/
     background-color: #f7d3aa;
 }
 
-figure {      /*selector for figure elements*/
+figure {      /*selector for figure elements -- ImageOption Styling*/
     margin: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-figcaption {  /*selector for figcaption elements*/
+figcaption {  /*selector for figcaption elements -- ImageOption Styling*/*/
     padding: 10px;
 }
 
@@ -79,7 +79,7 @@ figcaption {  /*selector for figcaption elements*/
     text-align: center;
 }
 
-li a:hover { 
+li a:hover {       /*changes the link color when you hover over it*/
     background-color: #642c1c;
     color: #f7d3aa;
     border-radius: 15px;
@@ -91,31 +91,31 @@ li a:hover {
     box-sizing: border-box;
 }
 
-.column1 {
+.column1 {     /*src: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive*/
     float: left;
     width: 25%;
     padding: 2px;
 }
 
-.column2 {
+.column2 {     /*src: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive*/
     float: left;
     width: 75%;
     padding: 2px;
 }
 
-.row::after {               /*clear floats after the columns */
+.row::after {      /*clear floats after the columns using the row class*/
     content: "";
     display: table;
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /*If the browser window is 600px or smaller the width for classes starting w column is set to 100%*/
     [class*="column"] {
         width: 100%;
     }
 }
 
-img {                  /*selects image tag*/
+img {                  /*selects image tag src=https://www.w3schools.com/css/css_rwd_images.asp*/
     max-width: 100%;   /*image width wont exceed its max width but will size down responsively*/
     height: auto;
 }
