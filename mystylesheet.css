@@ -1,0 +1,122 @@
+/*mystylesheet.css
+  author: Lori Lowy
+  Oct 17, 2023*/
+
+h1,h2,h3 {           /*selector for heading elements 1-3*/
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+h1 {                /*selector for h1 elements*/
+    font-weight: bolder;
+    font-size: 36px;
+    color: #f7d3aa
+}
+
+h1,h2 {            /*selector for heading elements 1-2*/
+    text-transform: uppercase;
+}
+
+h3 {               /*selector for h3 elements*/
+    font-weight: lighter;
+}
+
+p {               /*selector for paragraph elements*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutme {        /*selector for about me class*/
+    text-align: center;
+    border: 2px #d8911d; 
+    border-style: dashed;
+    border-radius: 15px;
+}
+
+#portfolio > p {  /*selects all p elements in the portfolio id*/
+    text-align: center;
+}
+
+#resume > p {    /*selects all p elements in the resume id*/
+    padding-left: 20px;
+}
+
+.header {        /*selector for header class*/
+    background-color: #954e2c;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    border-radius: 15px;
+}
+
+body {         /*selector for body elements*/
+    background-color: #f7d3aa;
+}
+
+figure {      /*selector for figure elements*/
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption {  /*selector for figcaption elements*/
+    padding: 10px;
+}
+
+/*Begin -- MenuOption Styling: Navbar source:https://www.w3schools.com/css/css_navbar_vertical.asp*/
+.menu ul {         /*selector for unordered list elements*/
+    list-style-type: none; /*removes bullet points */
+    margin: 0;
+    padding: 0;
+    background-color: #ffc166;
+    border-radius: 15px;
+}
+.menu li a {      /*selector for anchor elements within li elements*/
+    display: block;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+li a:hover { 
+    background-color: #642c1c;
+    color: #f7d3aa;
+    border-radius: 15px;
+}
+/*End -- MenuOption Styling */
+
+/*Begin -- ResponsiveOption: source-https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+* {
+    box-sizing: border-box;
+}
+
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 2px;
+}
+
+.column2 {
+    float: left;
+    width: 75%;
+    padding: 2px;
+}
+
+.row::after {               /*clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    [class*="column"] {
+        width: 100%;
+    }
+}
+
+img {                  /*selects image tag*/
+    max-width: 100%;   /*image width wont exceed its max width but will size down responsively*/
+    height: auto;
+}
+/*End -- ResponsiveOption*/
