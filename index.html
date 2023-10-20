@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html>
-<header>
-<style>
-html {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid lightblue;
-  padding: 50px;
-  margin: 20px;
-}
-</style>
-</header>
-<h1>Lori Lowy</h1>
-<nav>
-  <a href="index.asp">About me</a>
-  <a href="portfolio">Portfolio</a>
-</nav>
+<head>
+    <title>Lori Lowy</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"> <!--ResponsiveOption: setting up the viewport-->
+    <link rel="stylesheet" href="mystylesheet.css"><!--Link to css stylesheet-->
+</head>
 <body>
-
-
-
-<p>About me</p>
-  
-
-<div>
-  <h2>Work Experience</h2>
-  <p>YogaTree</p>
-  <h2>Education</h2>
-  <dl>
-  <dt>Fleming College</dt>
-  <dd>- Geographic Information Systems Application Specialist</dd>
-  <dt>University of Toronto</dt>
-  <dd>- Honours Bachelor of Arts</dd>
-</dl>
-</div>
-
+    <div class="header">
+        <h1>Lori Lowy</h1>
+    </div>
+    <div class="row">
+        <div class="menu column1"> <!--MenuOption: list of links for menu. source:https://www.w3schools.com/css/css_navbar.asp-->
+            <ul>
+            <li><a href="index.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main column2">
+            <section class="aboutme">
+                <h2>About me</h2>
+                <p>This is a legit website that I made myself. The resume is real and the portfolio is my experience as an amateur film photographer.</p>
+            </section>
+            <section id="resume">
+                <h2>Employement</h2>
+                <h3>Online Peer Tutor, Fleming College</h3>
+                <p>Assiting students in courses that I've successfully completed with understanding core concepts and developing their skills.</p>
+                <h3>Eneregy Exchange Program Coordinator & Assistant Manager, Yoga Tree</h3>
+                <p>Energy Exchange Program Coordinator: Reviewing and interviewing volunteer applicants, training and creating schedules for shifts, managing a team of 20 volunteers.<br>
+                    Assistant Manager: Administrative tasks assisting the studio manager, active role in the hiring and onboarding process and assisting clients with complex account issues. 
+                    Providing critical feedback to front desk staff, filing waivers and contract forms.</p>
+                <h3>Early Childhood Assistant (ECA), Church St. Childcare Centre</h3>
+                <p>Seasonal contract for the summer to work with toddler to grade school age students. Responsible for taking attendance for children who are present that day. 
+                    Assisting in developing and supervising educational and entertaining activities for the children. 
+                    Providing one-on-one support with children to enhance their learning skills.</p>
+                <h2>Education</h2>
+                <h3>Fleming College, Lindsay</h3>
+                <p>Ontario College Graduate Certificate; Geographic Information Systems Application Specialist</p>
+                <h3>University of Toronto, St. George Campus, Toronto </h3>
+                <p>Honors Bachelor of Arts; Double Major in History of Art and Environmental Studies</p>
+                <h3>St. Jean de Brebeuf Catholic High School, Woodbridge </h3>
+                <p>Ontario Secondary School Diploma, Business Studies Certificate of Achievement and Ontario Scholar</p>
+                <h2>Skills</h2>
+                <p>Proficient in software such as ArcGIS Pro, QGIS, Avenza Map Publisher, FME & Microsoft Office. Programing knowledge in the languages of Python, Java & SQL.
+                    Creative problem solver, positive attitude, strong work ethic, quick study, and an innate desire to learn. </p>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
+
